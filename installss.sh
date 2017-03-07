@@ -7,8 +7,8 @@ cd Python-2.7.13
 ./configure --prefix=/usr/local/python27
 make && make install
 wget https://bootstrap.pypa.io/get-pip.py
-/usr/local/python27/bin/python python get-pip.py
-/usr/local/python27/pip install shadowsocks
+/usr/local/python27/bin/python get-pip.py
+/usr/local/python27/bin/pip install shadowsocks
 ln -s /usr/local/python27/bin/ssserver /usr/bin
 
 cat >/etc/init.d/ss<<EOF
